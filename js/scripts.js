@@ -10,7 +10,22 @@ $(document).ready(function(){
     $("#user").text(myAccount.name);
     $(".funds").show();
 
+    $(".funds").submit(function(event){
+      event.preventDefault();
+      var deposit = parseInt($("input#depositamount").val());
+      var withdrawal = parseInt($("input#withdrawal").val());
+      if(deposit){
+        myAccount.deposit(deposit);
+      }
+      if (withdrawal) {
+      myAccount.withdrawal(withdrawal);
+    }
+    $("#balance").text(myAccount.balance);
+    $(".funds").trigger("reset");
+    });
+    $(".newaccount").trigger("reset");
   });
+
 });
 
 

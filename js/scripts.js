@@ -9,7 +9,6 @@ $(document).ready(function(){
     $("#balance").text(myAccount.balance);
     $("#user").text(myAccount.name);
     $(".funds").show();
-
     $(".funds").submit(function(event){
       event.preventDefault();
       var deposit = parseInt($("input#depositamount").val());
@@ -25,13 +24,7 @@ $(document).ready(function(){
     });
     $(".newaccount").trigger("reset");
   });
-
 });
-
-
-
-
-
 
 //Back End//
 function Account(initialDeposit, name){

@@ -7,7 +7,7 @@
 ## Description
 
 | Behavior | Input | Output |
-| -------- |: ---------|: --------- :|
+| -------- |: --------- |: --------- :|
 | Application takes user name and displays it with current balance | "Bob" | "Hi Bob, Your current balance is: " |
 | Application takes an initial deposit amount and displays it as the current running balance | 50 | 50 |
 | Application takes a deposit amount and adds it to the current running balance, displaying the total | 20 | 70 |

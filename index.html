@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your Bank Account</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="newaccount" action="index.html" method="post">
+            <label for="form-group">Your Name: </label>
+            <input class="form-control" type="text" id="name">
+
+            <label for="form-group">Initial Deposit: </label>
+            <input class="form-control" type="number" id="initialdeposit">
+            <button type="submit" class="btn btn-success" name="button">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form class="funds" action="index.html" method="post">
+            <label for="form-group">Deposit Amount: </label>
+            <input class="form-control" type="number" id="depositamount">
+
+            <label for="form-group">Withdrawal Amount: </label>
+            <input class="form-control" type="number" id="withdrawal">
+            <button type="submit" class="btn btn-success" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+      <div class="panel panel-success">
+        <div class="output">
+          <p>Your current balance is: </p>
+          <h3><span id="balance"></span></h3>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
